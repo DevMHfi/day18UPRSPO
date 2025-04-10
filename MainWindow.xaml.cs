@@ -30,7 +30,6 @@ namespace uprspo18
 			var response = client.DownloadString("http://127.0.0.1:63450/api/hotels");
 			CurrentHotels = JsonConvert.DeserializeObject<List<Hotel>>(response);
 			DataContext = this;
-
 		}
 	}
 }
